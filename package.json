@@ -1,5 +1,5 @@
 {
-  "name": "create-email",
+  "name": "@realmjs/create-email",
   "version": "1.0.0",
   "description": "create an email structure from a json template",
   "main": "src/main.js",
