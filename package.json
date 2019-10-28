@@ -1,0 +1,19 @@
+{
+  "name": "create-email",
+  "version": "1.0.0",
+  "description": "create an email structure from a json template",
+  "main": "src/main.js",
+  "scripts": {
+    "test": "node test/test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/realmjs/create-email.git"
+  },
+  "author": "duongtdn",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/realmjs/create-email/issues"
+  },
+  "homepage": "https://github.com/realmjs/create-email#readme"
+}
