@@ -4,17 +4,22 @@ const fs = require('fs')
 
 const template = {
   charset: 'UTF-8',
-  subject: 'Verify your email registered at {{service}}',
+  subject: 'Reset Password link generated',
   body: `
+<html>
+<head></head>
+<body>
 <p>Dear {{customer}},</p>
-<p>Your email is registered to use services provided by <b> {{service}} </b> </p>
-<p>To verify that your are the owner of this email, please go to the following URL</p>
+<p>We have received a request to reset your password at <b> {{service}} </b> </p>
+<p>If you requested this, please go to the following URL to enter your new password</p>
 <a href='{{endpoint}}?t={{token}}' > {{endpoint}}?t={{token}} </a>
 <p> This link expires 24 hours after your original request </p>
-<p style="color: red"> Notes: If you did not register this email at our service, please DO NOT click on the link. We are sorry for the inconvenience </p>
+<p> If you did NOT request to reset password, please do not click on the link. We are sorry for the inconvenience </p>
 <p> This email is auto-generated. Please <b>do not reply</b> this email.</p>
 <p> Sincerely, </p>
-<p> {{signature}} </p>`
+<p> {{signature}} </p>
+</body>
+</html>`
 }
 
 const text = JSON.stringify(template)
